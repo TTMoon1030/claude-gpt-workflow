@@ -1,7 +1,7 @@
 {
   "name": "gpt-workflow",
   "displayName": "Claude × GPT 工作流",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "讓 Claude 用這台 Mac 的 Codex（ChatGPT 登入，不需要 API 金鑰）叫 GPT 生圖，並一鍵建立業務資料庫。包含五個技能：setup（第一次設定＋測試生圖）、gpt-image（生圖）、check（排錯）、migrate（整理舊版設定）、motion（從動畫存儲區套用動畫）。",
   "author": { "name": "TTMoon1030" },
   "homepage": "https://claude-workflow-guide.pages.dev/",
