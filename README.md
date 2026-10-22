@@ -33,6 +33,7 @@ Claude 會自動：找出舊版教學留下的東西（有的話先問你要沿�
 - 生圖：直接說「用 GPT 畫一張…」，或輸入 `/gpt-workflow:gpt-image`。
 - 出問題：說「幫我檢查設定」，或輸入 `/gpt-workflow:check`。
 - 重新設定：輸入 `/gpt-workflow:setup`。
+- 網頁加動畫：說「用動畫存儲區的 #02」或「網頁加一個渠道環繞的動畫」，或輸入 `/gpt-workflow:motion`。動畫清單在教學頁的「動畫存儲區」，會不定時更新，每次用都是最新版。
 
 ## 內容
 
@@ -42,5 +43,6 @@ Claude 會自動：找出舊版教學留下的東西（有的話先問你要沿�
 | `skills/gpt-image/` | 用 Codex 叫 GPT 生圖 |
 | `skills/check/` | 檢查與排錯對照表 |
 | `skills/migrate/` | 整理舊版教學留下的東西，沿用已建好的資料夾 |
+| `skills/motion/` | 從動畫存儲區套用現成動畫到網頁 |
 | `scripts/` | 找 Codex、檢查、生圖、建資料庫、掃描舊版痕跡、打開每天用的對話的腳本 |
 | `templates/` | 資料庫的 README_索引.md 與 CLAUDE.md 範本 |
