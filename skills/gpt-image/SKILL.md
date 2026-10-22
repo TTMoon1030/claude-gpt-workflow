@@ -5,7 +5,7 @@ description: 需要圖片時一律用這個技能：插圖、情境示意圖、�
 
 # 用 Codex 叫 GPT 生圖
 
-外掛資料夾＝這份 SKILL.md 往上兩層的資料夾，下面寫作 `<外掛>`。
+`<外掛>`＝有 `scripts/` 資料夾的那一層，也就是 `…/gpt-workflow/<版本>/`（這份 SKILL.md 所在資料夾的上上一層）。
 
 不要改用 OpenAI API、不要寫呼叫 API 的腳本、不要跟使用者要 API 金鑰。這台電腦的 Codex 用的是 ChatGPT 登入。
 

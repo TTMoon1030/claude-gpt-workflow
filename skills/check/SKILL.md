@@ -5,7 +5,7 @@ description: GPT 生圖失敗或設定有問題時使用：找不到 Codex、Not
 
 # 檢查與排錯
 
-外掛資料夾＝這份 SKILL.md 往上兩層的資料夾，下面寫作 `<外掛>`；`<Codex>` 是 doctor.sh 印出的 Codex 路徑。
+`<外掛>`＝有 `scripts/` 資料夾的那一層，也就是 `…/gpt-workflow/<版本>/`（這份 SKILL.md 所在資料夾的上上一層）；`<Codex>` 是 doctor.sh 印出的 Codex 路徑。
 
 先執行 `bash "<外掛>/scripts/doctor.sh"`，再照下表處理。指令都由你執行；需要使用者動手時，先用一句話說要做什麼。不要改用 OpenAI API，也不要跟使用者要 API 金鑰。
 
