@@ -5,7 +5,7 @@ description: GPT 生圖失敗或設定有問題時使用：找不到 Codex、Not
 
 # 檢查與排錯
 
-`<外掛>`＝有 `scripts/` 資料夾的那一層，也就是 `…/gpt-workflow/<版本>/`（這份 SKILL.md 所在資料夾的上上一層）；`<Codex>` 是 doctor.sh 印出的 Codex 路徑。
+`<外掛>`＝有 `scripts/` 資料夾的那一層，也就是這份 SKILL.md 所在資料夾的上上一層（從 GitHub 安裝的是 `…/gpt-workflow/<版本>/`）；`<Codex>` 是 doctor.sh 印出的 Codex 路徑。
 
 先執行 `bash "<外掛>/scripts/doctor.sh"`，再照下表處理。指令都由你執行；需要使用者動手時，先用一句話說要做什麼。不要改用 OpenAI API，也不要跟使用者要 API 金鑰。
 
@@ -19,6 +19,7 @@ description: GPT 生圖失敗或設定有問題時使用：找不到 Codex、Not
 | Codex 訊息提到 plan、upgrade、not available | 帳號方案不能生圖，需要 ChatGPT Plus 以上。 |
 | 跑完了但資料夾裡沒有圖 | 到 `~/.codex/generated_images/` 找最新的圖複製過去；下次 prompt 寫明「存成目前資料夾裡的 檔名.png」。 |
 | 你（Claude）想寫 OpenAI API 腳本或要金鑰 | 不要這樣做，改用 gpt-image 技能（`<外掛>/skills/gpt-image/SKILL.md`）。 |
+| 之前照舊版教學做過，有兩套設定、兩個資料夾或舊技能 | 照 migrate 技能（`<外掛>/skills/migrate/SKILL.md`）整理，舊東西會搬到備份，不會刪除。 |
 | Claude 每一步都問要不要允許 | 正常，這是 Claude 執行指令前的確認，按「允許」就好。 |
 
 處理完再跑一次 doctor.sh。最後用表格回報每一項的狀態。

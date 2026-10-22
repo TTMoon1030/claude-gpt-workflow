@@ -20,7 +20,11 @@
 2. 裝好後，在 ~/.claude/plugins/cache/claude-gpt-workflow/ 底下搜尋 skills/setup/SKILL.md，讀它並照步驟幫我完成設定。
 ```
 
-Claude 會自動：找到 Codex → 確認生圖功能 → 確認 ChatGPT 登入（沒登入會給你網址和代碼）→ 在桌面建立「我的業務資料庫」→ 生一張測試圖 → 用表格回報。你只需要在瀏覽器輸入一次登入代碼，以及在 Claude 詢問時按「允許」。
+Claude 會自動：找出舊版教學留下的東西（有的話先問你要沿用還是搬到備份）→ 找到 Codex → 確認生圖功能 → 確認 ChatGPT 登入（沒登入會給你網址和代碼）→ 在桌面建立「我的業務資料庫」→ 生一張測試圖 → 用表格回報。你只需要在瀏覽器輸入一次登入代碼，以及在 Claude 詢問時按「允許」。
+
+## 之前照舊版教學做過？
+
+貼一樣的那段話就好。Claude 會先掃描舊版留下的資料夾、規則檔、舊技能、OpenAI API 腳本和金鑰設定，沿用你已經建好的資料夾；要清掉的東西每一類都會先問你，再搬到資料庫的 `_to_delete/舊版設定_<日期>/`，不會直接刪除。外掛已經裝好的話，也可以說「幫我整理舊版設定」（或輸入 `/gpt-workflow:migrate`）。
 
 ## 之後怎麼用
 
@@ -35,5 +39,6 @@ Claude 會自動：找到 Codex → 確認生圖功能 → 確認 ChatGPT 登入
 | `skills/setup/` | 第一次設定＋測試生圖 |
 | `skills/gpt-image/` | 用 Codex 叫 GPT 生圖 |
 | `skills/check/` | 檢查與排錯對照表 |
-| `scripts/` | 找 Codex、檢查、生圖、建資料庫的腳本 |
+| `skills/migrate/` | 整理舊版教學留下的東西，沿用已建好的資料夾 |
+| `scripts/` | 找 Codex、檢查、生圖、建資料庫、掃描舊版痕跡的腳本 |
 | `templates/` | 資料庫的 README_索引.md 與 CLAUDE.md 範本 |
