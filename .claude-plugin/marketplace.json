@@ -1,0 +1,13 @@
+{
+  "name": "claude-gpt-workflow",
+  "description": "Claude × GPT 工作流外掛",
+  "owner": { "name": "TTMoon1030" },
+  "plugins": [
+    {
+      "name": "gpt-workflow",
+      "source": "./",
+      "description": "讓 Claude 用 Codex（ChatGPT 登入）叫 GPT 生圖，並一鍵建立業務資料庫、測試、排錯。",
+      "category": "productivity"
+    }
+  ]
+}
