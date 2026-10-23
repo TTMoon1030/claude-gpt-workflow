@@ -5,7 +5,7 @@ description: 網頁要加動畫時使用：從 Omnichat 動畫存儲區拿現成
 
 # 從動畫存儲區套用動畫
 
-清單網址：https://claude-workflow-guide.pages.dev/motion/effects.json （教學頁的「動畫存儲區」也是讀這份）。
+清單網址：https://vt-ai-workshop.pages.dev/motion/effects.json （教學頁的「動畫存儲區」也是讀這份）。
 
 省 token 的做法：總清單只有每個動畫的編號、名稱、適合講什麼（每個約 150 token）；挑好之後才讀那個動畫的 `detail`（effect.json，約 600 token）。程式和圖檔用 `curl -L` 直接下載（網址會轉址，一定要加 -L），不要讀內容；示範頁 index.html 只有在要整段照搬時才下載。
 

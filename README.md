@@ -2,7 +2,7 @@
 
 讓 Claude（Mac 桌面版的程式碼模式）用這台電腦的 Codex 叫 GPT 生圖，並幫你建立「我的業務資料庫」。Codex 用的是 ChatGPT 登入，不需要 OpenAI API 金鑰。
 
-完整教學：https://claude-workflow-guide.pages.dev/
+完整教學：https://vt-ai-workshop.pages.dev/
 
 ## 需要
 
@@ -11,7 +11,7 @@
 
 ## 安裝與設定
 
-最簡單：到教學頁 https://claude-workflow-guide.pages.dev/#start 按「一鍵開始設定」，Claude 會自己開好新對話並填好下面這段話，按 Enter 送出就好。
+最簡單：到教學頁 https://vt-ai-workshop.pages.dev/#start 按「一鍵開始設定」，Claude 會自己開好新對話並填好下面這段話，按 Enter 送出就好。
 
 也可以手動：在 Claude 程式碼模式開一個新對話（資料夾選「桌面」），貼上這段話：
 
