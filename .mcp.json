@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "vt-workshop": {
+      "type": "http",
+      "url": "https://vt-ai-workshop.pages.dev/mcp",
+      "headers": { "X-VT-Plugin": "1.6.0" }
+    }
+  }
+}
