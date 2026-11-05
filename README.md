@@ -46,3 +46,9 @@ Claude 會自動：找出舊版教學留下的東西（有的話先問你要沿�
 | `skills/motion/` | 從動畫存儲區套用現成動畫到網頁 |
 | `scripts/` | 找 Codex、檢查、生圖、建資料庫、掃描舊版痕跡、打開每天用的對話的腳本 |
 | `templates/` | 資料庫的 README_索引.md 與 CLAUDE.md 範本 |
+
+## 工作台
+跟 Claude 說「打開工作台」就會開 https://vt-ai-workshop.pages.dev/hub/ 。
+
+## 更新
+到工作台小鎮入口的「外掛更新站」按「一鍵更新」，更新一次之後會打開自動更新。更新紀錄看 [CHANGELOG.md](CHANGELOG.md)。
