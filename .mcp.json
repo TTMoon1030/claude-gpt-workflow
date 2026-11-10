@@ -3,7 +3,7 @@
     "vt-workshop": {
       "type": "http",
       "url": "https://vt-ai-workshop.pages.dev/mcp",
-      "headers": { "X-VT-Plugin": "1.7.0" }
+      "headers": { "X-VT-Plugin": "1.8.0" }
     }
   }
 }

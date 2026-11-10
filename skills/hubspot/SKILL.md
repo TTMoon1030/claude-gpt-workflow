@@ -22,6 +22,7 @@ description: 把剛做的事記到 HubSpot。使用者說「log hubspot」「hub
 - **還沒連過**：請使用者到 HubSpot 打開這位客戶的頁面，聯絡人、公司或交易都可以，把網址貼給你；再用 `hubspot_link` 帶 `url` 存起來。每位客戶只要一次。
 - **沒有 `hubspot_link` 這個工具**，代表還沒連上工作台：這次先請使用者貼網址直接用。做完提醒他到工作台小鎮入口的更新站連上 Claude，之後就不用再貼。
 - 使用者已經在訊息裡給了 HubSpot 紀錄網址，就直接用，不用再查。
+- 使用者只說「把某客戶的 HubSpot 連結存到小鎮」：用 `hubspot_link` 帶 `url` 存好就結束，不用寫備註。
 - 網址一定要是 `https://app….hubspot.com/contacts/…` 開頭的紀錄頁。不是就不要用，請他重貼。
 
 ## 三、給使用者確認
