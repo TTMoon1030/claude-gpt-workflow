@@ -22,7 +22,9 @@ VT Workshop 工作台在 https://vt-ai-workshop.pages.dev/hub/ ，用 LINE 登�
 | log hubspot、記到 HubSpot | 照 hubspot 技能（`<外掛>/skills/hubspot/SKILL.md`）做。 |
 | 打開小鎮 | 執行 `open https://vt-ai-workshop.pages.dev/hub/`。 |
 
-`<外掛>`＝這份 SKILL.md 所在資料夾的上上一層。看不到上面的工具，就先照最下面「連接工作台」那一節做。
+`<外掛>`＝這份 SKILL.md 所在資料夾的上上一層。
+
+看不到上面的工具，或工具回說要登入、要授權、連不上：先照最下面「連接工作台」那一節重新連上，再繼續。不要改用別的方法去查小鎮的資料，例如直接讀資料庫或抓網頁，那樣不會記參考次數，資料也可能不完整。
 
 ## 一般用法
 
