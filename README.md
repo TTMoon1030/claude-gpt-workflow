@@ -44,6 +44,7 @@ Claude 會自動：找出舊版教學留下的東西（有的話先問你要沿�
 | `skills/check/` | 檢查與排錯對照表 |
 | `skills/migrate/` | 整理舊版教學留下的東西，沿用已建好的資料夾 |
 | `skills/motion/` | 從動畫存儲區套用現成動畫到網頁 |
+| `skills/hubspot/` | 說一句 log hubspot，把剛做的事記到 HubSpot；也負責檢查 Chrome 的 Claude 擴充功能 |
 | `scripts/` | 找 Codex、檢查、生圖、建資料庫、掃描舊版痕跡、打開每天用的對話的腳本 |
 | `templates/` | 資料庫的 README_索引.md 與 CLAUDE.md 範本 |
 

@@ -20,6 +20,7 @@ description: GPT 生圖失敗或設定有問題時使用：找不到 Codex、Not
 | 跑完了但資料夾裡沒有圖 | 到 `~/.codex/generated_images/` 找最新的圖複製過去；下次 prompt 寫明「存成目前資料夾裡的 檔名.png」。 |
 | 你（Claude）想寫 OpenAI API 腳本或要金鑰 | 不要這樣做，改用 gpt-image 技能（`<外掛>/skills/gpt-image/SKILL.md`）。 |
 | 之前照舊版教學做過，有兩套設定、兩個資料夾或舊技能 | 照 migrate 技能（`<外掛>/skills/migrate/SKILL.md`）整理，舊東西會搬到備份，不會刪除。 |
+| 說了 log hubspot 卻寫不進 HubSpot、Chrome 沒反應 | 照 hubspot 技能（`<外掛>/skills/hubspot/SKILL.md`）的「Chrome 的 Claude 擴充功能」一節檢查擴充功能有沒有裝好、有沒有登入；再請使用者確認 Chrome 已經登入 HubSpot。 |
 | Claude 每一步都問要不要允許 | 正常，這是 Claude 執行指令前的確認，按「允許」就好。 |
 
 處理完再跑一次 doctor.sh。最後用表格回報每一項的狀態。

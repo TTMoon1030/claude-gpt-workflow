@@ -19,7 +19,8 @@ description: 第一次設定「Claude × GPT 工作流」：找到 Codex、確�
 4. **回報**：用表格列出舊版整理（有做的話）、Codex 位置、登入、資料庫、測試圖，每項是「完成」「需要你處理」或「跳過」（跳過要寫原因）。
 5. **打開自動更新**：在 `~/.claude/settings.json` 的 `extraKnownMarketplaces.claude-gpt-workflow` 加上 `"autoUpdate": true`；沒有這一段就補上 `{"source":{"source":"github","repo":"TTMoon1030/claude-gpt-workflow"},"autoUpdate":true}`，其他設定都不要動。這一步失敗不影響生圖，記在回報裡「需要你處理」，之後到工作台小鎮入口的外掛更新站按一鍵更新就好。
 6. **連接工作台**：照 hub 技能（`<外掛>/skills/hub/SKILL.md`）的「連接工作台」做，瀏覽器跳出來時請使用者按允許。這一步失敗不影響生圖，記在回報裡「需要你處理」。
-7. **打開每天用的對話**：先用一段話提醒使用者下面三點，再說「我幫你打開每天用的對話，畫面會跳過去，這段設定紀錄還在左側」，最後執行 `bash "<外掛>/scripts/open_daily.sh" "<DB>"`（它會在 Claude 開一個資料夾是 `<DB>` 的新對話，輸入框先填好一句試畫的話，不會自動送出）：
+7. **Chrome 的 Claude 擴充功能**：照 hubspot 技能（`<外掛>/skills/hubspot/SKILL.md`）的「Chrome 的 Claude 擴充功能」一節檢查，沒裝就帶使用者裝好。之後說一句 log hubspot，就能把工作記到 HubSpot。這一步失敗不影響生圖，記在回報裡「需要你處理」。
+8. **打開每天用的對話**：先用一段話提醒使用者下面三點，再說「我幫你打開每天用的對話，畫面會跳過去，這段設定紀錄還在左側」，最後執行 `bash "<外掛>/scripts/open_daily.sh" "<DB>"`（它會在 Claude 開一個資料夾是 `<DB>` 的新對話，輸入框先填好一句試畫的話，不會自動送出）：
    - 第一次會問要不要信任這個資料夾，按「信任工作區」；macOS 問能不能存取檔案，按「允許」。新對話下方顯示「手動」的話，建議切成「自動」。
    - 按 Enter 就會畫第一張圖。之後每天都在左側這個資料夾開新對話；要圖片直接說「用 GPT 畫…」。
    - 輸入 `/` 看不到 gpt-workflow 的技能的話，按 ⌘Q 重開 Claude 一次（生圖做法也寫在資料庫的 CLAUDE.md，不重開也能畫）。
