@@ -46,6 +46,7 @@ Claude 會自動：找出舊版教學留下的東西（有的話先問你要沿�
 | `skills/motion/` | 從動畫存儲區套用現成動畫到網頁 |
 | `skills/hubspot/` | 說一句 log hubspot，把剛做的事記到 HubSpot；也負責檢查 Chrome 的 Claude 擴充功能 |
 | `skills/hub/` | 連上 VT Workshop 工作台（小鎮）：說到「小鎮」就會貼板子、找提案、找動畫、存 HubSpot 連結 |
+| `skills/playbook/` | 說一句要做什麼（開發信、簡報、會後整理、報價單…），先從小鎮讀團隊的做法再照著做；要先連上小鎮 |
 | `scripts/` | 找 Codex、檢查、生圖、建資料庫、掃描舊版痕跡、打開每天用的對話的腳本 |
 | `templates/` | 資料庫的 README_索引.md 與 CLAUDE.md 範本 |
 

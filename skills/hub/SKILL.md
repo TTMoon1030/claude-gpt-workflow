@@ -7,7 +7,7 @@ description: 打開、連接和使用 VT Workshop 工作台，夥伴都叫它「
 
 VT Workshop 工作台在 https://vt-ai-workshop.pages.dev/hub/ ，用 LINE 登入。夥伴都叫它「小鎮」：小鎮、廣場、工作台指的是同一個地方。夥伴做好的客戶網頁都貼在廣場。
 
-這個外掛帶了 `vt-workshop` 連線，連上之後你有這些工具：`search_boards`（查廣場）、`use_board`（拿板子當範本）、`post_board`（貼到廣場）、`hubspot_link`（客戶的 HubSpot 連結）、`hubspot_logged`。
+這個外掛帶了 `vt-workshop` 連線，連上之後你有這些工具：`search_boards`（查廣場）、`use_board`（拿板子當範本）、`playbook`（讀團隊的做法）、`post_board`（貼到廣場）、`hubspot_link`（客戶的 HubSpot 連結）、`hubspot_logged`。
 
 ## 使用者說到「小鎮」時
 
@@ -20,6 +20,7 @@ VT Workshop 工作台在 https://vt-ai-workshop.pages.dev/hub/ ，用 LINE 登�
 | 照小鎮上某一塊做一份給某客戶 | 先 `search_boards` 找到那一塊，用 `use_board` 記一次參考並拿到網址，打開讀內容，再做一份新的。內容要換成這位客戶的，不要照抄別的客戶資料。 |
 | 把某客戶的 HubSpot 連結存到小鎮 | 用 `hubspot_link` 帶 `customer` 和 `url`。只存連結，不寫備註。 |
 | log hubspot、記到 HubSpot | 照 hubspot 技能（`<外掛>/skills/hubspot/SKILL.md`）做。 |
+| 幫某客戶寫開發信、做簡報、Demo 前研究、會後整理、報價單、走期表、交接表，或找開發名單 | 照 playbook 技能（`<外掛>/skills/playbook/SKILL.md`）做：先用 `playbook` 工具讀團隊的做法，再照著做。 |
 | 打開小鎮 | 執行 `open https://vt-ai-workshop.pages.dev/hub/`。 |
 
 `<外掛>`＝這份 SKILL.md 所在資料夾的上上一層。
