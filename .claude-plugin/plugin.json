@@ -1,13 +1,12 @@
 {
   "name": "gpt-workflow",
   "displayName": "Claude × GPT 工作流",
-  "version": "1.9.0",
-  "description": "讓 Claude 用這台 Mac 的 Codex（ChatGPT 登入，不需要 API 金鑰）叫 GPT 生圖，一鍵建立業務資料庫，連上 VT Workshop 工作台（查廣場、貼板子），說一句 log hubspot 把工作記到 HubSpot。照團隊的做法寫開發信、做簡報、整理會議。包含八個技能：setup（第一次設定＋測試生圖）、gpt-image（生圖）、check（排錯）、migrate（舊版整理）、motion（動畫庫）、hub（工作台）、hubspot（記到 HubSpot）、playbook（照團隊的做法做事）。",
+  "version": "1.10.0",
+  "description": "讓 Claude 用這台 Mac 的 Codex（ChatGPT 登入，不需要 API 金鑰）叫 GPT 生圖，一鍵建立業務資料庫，連上 VT Workshop 工作台（查廣場、貼板子），說一句 log hubspot 把工作記到 HubSpot。照團隊的做法寫開發信、做簡報、整理會議。自己做的工具可以發給 Rex，審過放進外掛給全隊用。包含八個技能：setup（第一次設定＋測試生圖）、gpt-image（生圖）、check（排錯）、migrate（舊版整理）、motion（動畫庫）、hub（工作台）、hubspot（記到 HubSpot）、playbook（照團隊的做法做事）。",
   "author": {
     "name": "TTMoon1030"
   },
   "homepage": "https://vt-ai-workshop.pages.dev/",
-  "repository": "https://github.com/TTMoon1030/claude-gpt-workflow",
   "keywords": [
     "codex",
     "gpt-image",

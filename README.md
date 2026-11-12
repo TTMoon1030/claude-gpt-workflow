@@ -11,22 +11,18 @@
 
 ## 安裝與設定
 
-最簡單：到教學頁 https://vt-ai-workshop.pages.dev/#start 按「一鍵開始設定」，Claude 會自己開好新對話並填好下面這段話，按 Enter 送出就好。
+外掛由 VT Workshop 工作台（小鎮）發給團隊的夥伴，不從 GitHub 安裝。
 
-也可以手動：在 Claude 程式碼模式開一個新對話（資料夾選「桌面」），貼上這段話：
+1. 用 LINE 登入小鎮：https://vt-ai-workshop.pages.dev/hub/
+2. 到「工坊」最下面的「第一次用」，按「安裝工作流外掛」。Claude 會開好新對話並填好指令，按 Enter 送出就好。
 
-```
-請幫我安裝並完成「Claude × GPT 工作流」設定。我不熟終端機，所有指令都請你執行；需要我動手時，先用一句話告訴我要做什麼，等我回覆再繼續。
-
-1. 安裝外掛：執行 claude plugin marketplace add TTMoon1030/claude-gpt-workflow，再執行 claude plugin install gpt-workflow@claude-gpt-workflow。找不到 claude 指令的話，用 Claude 桌面版內建的：在 ~/Library/Application Support/Claude/claude-code/ 底下搜尋 claude.app/Contents/MacOS/claude（路徑有空格要加引號），用能正常執行 --version 的最新版本。
-2. 裝好後，在 ~/.claude/plugins/cache/claude-gpt-workflow/ 底下搜尋 skills/setup/SKILL.md，讀它並照步驟幫我完成設定。
-```
+指令裡有一個一次性的配對碼（30 分鐘內有效）。Claude 用它向小鎮拿一把下載外掛的鑰匙，存在你電腦的 `~/.vt-workshop/plugin-headers.json`，之後更新外掛都靠它，不用再登入。離開團隊後這把鑰匙就失效。
 
 Claude 會自動：找出舊版教學留下的東西（有的話先問你要沿用還是搬到備份）→ 找到 Codex → 確認生圖功能 → 確認 ChatGPT 登入（沒登入會給你網址和代碼）→ 在桌面建立「我的業務資料庫」→ 生一張測試圖 → 用表格回報 → 幫你打開每天用的對話（資料夾是「我的業務資料庫」，輸入框先填好一句試畫的話）。你只需要在瀏覽器輸入一次登入代碼，以及在 Claude 詢問時按「允許」。
 
 ## 之前照舊版教學做過？
 
-貼一樣的那段話就好。Claude 會先掃描舊版留下的資料夾、規則檔、舊技能、OpenAI API 腳本和金鑰設定，沿用你已經建好的資料夾；要清掉的東西每一類都會先問你，再搬到資料庫的 `_to_delete/舊版設定_<日期>/`，不會直接刪除。外掛已經裝好的話，也可以說「幫我整理舊版設定」（或輸入 `/gpt-workflow:migrate`）。
+一樣到小鎮的工坊按「安裝工作流外掛」就好。Claude 會先掃描舊版留下的資料夾、規則檔、舊技能、OpenAI API 腳本和金鑰設定，沿用你已經建好的資料夾；要清掉的東西每一類都會先問你，再搬到資料庫的 `_to_delete/舊版設定_<日期>/`，不會直接刪除。外掛已經裝好的話，也可以說「幫我整理舊版設定」（或輸入 `/gpt-workflow:migrate`）。
 
 ## 之後怎麼用
 
@@ -54,4 +50,7 @@ Claude 會自動：找出舊版教學留下的東西（有的話先問你要沿�
 跟 Claude 說「找同產業做過的提案」「貼到廣場」就能查板子、貼板子，第一次要在瀏覽器按一下「允許」。說「打開工作台」會開 https://vt-ai-workshop.pages.dev/hub/ 。
 
 ## 更新
-到工作台小鎮入口的「外掛更新站」按「一鍵更新」，更新一次之後會打開自動更新。更新紀錄看 [CHANGELOG.md](CHANGELOG.md)。
+外掛會自己更新：新版發出來之後，下一次開 Claude 對話、送出第一句話後的十分鐘內會在背景更新，再下一次開對話就用到新版。想馬上更新，到工作台小鎮入口的「外掛更新站」按「一鍵更新」。更新紀錄看 [CHANGELOG.md](CHANGELOG.md)。
+
+## 分享你做的工具
+跟 Claude 說「幫我把這個工具發給 Rex，由他整合上線」。Claude 會先列出要傳的檔案給你確認，傳出去之後由 Rex 審過、放進外掛，全隊都能用。進度在小鎮工坊的「分享你做的工具」。
