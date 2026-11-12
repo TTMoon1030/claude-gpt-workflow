@@ -7,7 +7,7 @@ description: 打開、連接和使用 VT Workshop 工作台，夥伴都叫它「
 
 VT Workshop 工作台在 https://vt-ai-workshop.pages.dev/hub/ ，用 LINE 登入。夥伴都叫它「小鎮」：小鎮、廣場、工作台指的是同一個地方。夥伴做好的客戶網頁都貼在廣場。
 
-這個外掛帶了 `vt-workshop` 連線，連上之後你有這些工具：`search_boards`（查廣場）、`use_board`（拿板子當範本）、`playbook`（讀團隊的做法）、`post_board`（貼到廣場）、`submit_tool`（把工具發給 Rex）、`submissions`（看投稿進度）、`hubspot_link`（客戶的 HubSpot 連結）、`hubspot_logged`。
+這個外掛帶了 `vt-workshop` 連線，連上之後你有這些工具：`search_boards`（查廣場）、`use_board`（拿板子當範本）、`playbook`（讀團隊的做法）、`post_board`（貼到廣場）、`submit_tool`（把工具發給 Rex）、`sync_project`（把整包專案同步給 Rex）、`submissions`（看投稿和專案的進度）、`hubspot_link`（客戶的 HubSpot 連結）、`hubspot_logged`。
 
 ## 使用者說到「小鎮」時
 
@@ -22,6 +22,7 @@ VT Workshop 工作台在 https://vt-ai-workshop.pages.dev/hub/ ，用 LINE 登�
 | log hubspot、記到 HubSpot | 照 hubspot 技能（`<外掛>/skills/hubspot/SKILL.md`）做。 |
 | 幫某客戶寫開發信、做簡報、Demo 前研究、會後整理、報價單、走期表、交接表，或找開發名單 | 照 playbook 技能（`<外掛>/skills/playbook/SKILL.md`）做：先用 `playbook` 工具讀團隊的做法，再照著做。 |
 | 把這個工具（技能、腳本、做法）發給 Rex、分享給團隊、由他整合上線 | 用 `submit_tool` 開一筆投稿，照它回的步驟做：先列出要傳的檔案，請使用者確認裡面沒有客戶資料、密碼和金鑰，再壓縮、用 curl 上傳。不要把檔案內容貼進對話。使用者問投稿進度時用 `submissions`。 |
+| 把這個專案（整個資料夾的網站或程式）同步給 Rex、傳給 Rex 優化、拿回 Rex 改過的版本 | 先不帶參數呼叫 `sync_project`，照它回的步驟做（專案放在這位夥伴專用的不公開 GitHub 儲存庫，只有他和 Rex 看得到，一個專案一條分支）。第一次要帶使用者登入 GitHub、等 Rex 邀請。傳之前先列出要傳的內容，請使用者確認沒有客戶資料、密碼和金鑰。不要用 `--force`。 |
 | 打開小鎮 | 執行 `open https://vt-ai-workshop.pages.dev/hub/`。 |
 
 `<外掛>`＝這份 SKILL.md 所在資料夾的上上一層。
